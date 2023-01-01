@@ -42,7 +42,7 @@
     "ts-jest": "^29.0.3"
   },
   "lint-staged": {
-    "*.{tsx,ts,css,md}": "prettier --write",
+    "*.{tsx,ts,css,md}": "eslint --cache --fix",
     "*": "prettier --write --ignore-unknown"
   }
 }
