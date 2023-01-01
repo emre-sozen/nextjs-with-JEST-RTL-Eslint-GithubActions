@@ -10,7 +10,8 @@
     "test": "jest",
     "test:ci": "jest --coverage --silent --ci",
     "prepare": "husky install",
-    "lint-staged": "lint-staged --allow-empty"
+    "prettier": "prettier {*,src/*,src/**/*} --write --ignore-unknown",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@types/node": "18.11.18",
@@ -42,7 +43,7 @@
     "ts-jest": "^29.0.3"
   },
   "lint-staged": {
-    "*.{tsx,ts,css,md}": "eslint --cache --fix",
+    "*.(tsx|ts)": "eslint --cache --fix",
     "*": "prettier --write --ignore-unknown"
   }
 }
